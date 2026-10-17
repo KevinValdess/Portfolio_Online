@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Kevin</title>
-    <link href="styles.css">
+    <link rel="stylesheet" href="https://jsdelivr.net">
 </head>
 <body>
     
-    <h2 class="Titulo">Bienvenido a mi portafolio online.</h2>
+    <header>
+        <p>Portafolio</p>
 
-    <div>
-        <nav>
-            <li>
-                <a href="Index.html">Inicio</a>
-                <a href="Proyectos.html">Proyectos</a>
-                <a href="Blog.html">Blog</a>
-                <a href="Contacto.html">Contacto</a>
-            </li>
-        </nav>
-    </div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>  
+  </header>
+
+  <main>
+
+        <section id="inicio">
+            
+            <p>Hola soy Kevin Valdés</p>
+
+            <h1>De resolver fallas técnicas a crear soluciones con código.</h1>
+            <p>
+                Soy estudiante de Análisis de Programación en Duoc UC y técnico en Electrónica y Automatización Industrial. Mi experiencia en terreno me ha enseñado a investigar problemas, buscar soluciones y comunicarme con las personas que necesitan ayuda.
+            </p>
+            <p>
+                Hoy aplico esa misma curiosidad a mis proyectos de programación. Busco mi primera oportunidad en desarrollo de software para aportar mi base técnica, aprender junto a un equipo y seguir creciendo. Me interesan especialmente las bases de datos, la automatización y la ciberseguridad.
+            </p>
+
+            <div>
+                <a href="#proyectos">Ver mis proyectos</a>
+                <a href="CV/CV_Kevin_Valdes.pdf" download>Descargar mi CV</a>
+            </div>
+        
+        </section>
+
+        <section id="proyectos">
+
+            <h1>Mis proyectos</h1>
+            
+            <p>
+                Estos son algunos de los proyectos en los que he trabajado para poner en práctica mis conocimientos de programación. En cada uno comparto qué construí, las herramientas que utilicé y lo que aprendí durante el proceso.
+            </p>
+            
+            <h1>Zona Bikers</h1>
+
+            <h3>Proyecto Universitario en equipo · Versión inicial completada</h3>
+
+            <p>
+                Sitio web de una tienda de accesorios para motocicletas, desarrollado como proyecto universitario. Incluye páginas de catálogo, detalle de productos, carrito y administración. La siguiente etapa del proyecto consiste en trasladar la interfaz a React.
+            </p>
+
+            <p>
+                Tecnologías: HTML5 - CSS - JavaScript 
+            </p>
+
+        </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 Kevin</p>
+    
+    <ul>
+        <li><a href=""><i class="bi bi-envelope"></i> Correo</a></li>
+        <li><a href=""><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+    </ul>
+
+  </footer>
 
 </body>
 </html>
