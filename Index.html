@@ -3,77 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Kevin</title>
-    <link rel="stylesheet" href="https://jsdelivr.net">
+    <title>Kevin Valdés | Portafolio de desarrollo</title>
+    <link   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+            >
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     
     <header>
-        <p>Portafolio</p>
+        <div class="container d-flex flex-column flex-md-row
+                    justify-content-between align-items-center gap-3 py-3">
+            <p class="mb-0 fw-bold">Kevin Valdés</p>
 
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>  
+            <nav aria-label="Navegación principal">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3 mb-0">
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#conocimientos">Conocimientos</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav> 
+        </div> 
   </header>
 
-  <main>
+  <main class="container">
 
-        <section id="inicio">
+        <section id="inicio" class="py-5">
             
-            <p>Hola soy Kevin Valdés</p>
+            <p>Hola, soy Kevin Valdés</p>
 
-            <h1>De resolver fallas técnicas a crear soluciones con código.</h1>
+            <h1 class="display-5 fw-bold mb-4">
+                De resolver fallas técnicas a crear soluciones con código.
+            </h1>
+            
             <p>
-                Soy estudiante de Análisis de Programación en Duoc UC y técnico en Electrónica y Automatización Industrial. Mi experiencia en terreno me ha enseñado a investigar problemas, buscar soluciones y comunicarme con las personas que necesitan ayuda.
+                Soy estudiante de Ingeniería en Informática en Duoc UC y técnico en Electrónica y Automatización Industrial. Mi experiencia en terreno me ha enseñado a investigar problemas, buscar soluciones y comunicarme con las personas que necesitan ayuda.
             </p>
             <p>
                 Hoy aplico esa misma curiosidad a mis proyectos de programación. Busco mi primera oportunidad en desarrollo de software para aportar mi base técnica, aprender junto a un equipo y seguir creciendo. Me interesan especialmente las bases de datos, la automatización y la ciberseguridad.
             </p>
 
-            <div>
-                <a href="#proyectos">Ver mis proyectos</a>
-                <a href="CV/CV_Kevin_Valdes.pdf" download>Descargar mi CV</a>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <a  href="#proyectos"
+                    class="btn btn-primary">
+                    Ver mis proyectos
+                </a>
+                <a  href="CV/CV_Kevin_Valdes.pdf"
+                    class="btn btn-outline-primary"
+                    download>
+                    Descargar mi CV
+                </a>
             </div>
         
         </section>
 
-        <section id="proyectos">
+        <section id="proyectos" class="py-5">
 
-            <h1>Mis proyectos</h1>
+            <h2>Mis proyectos</h2>
             
             <p>
-                Estos son algunos de los proyectos en los que he trabajado para poner en práctica mis conocimientos de programación. En cada uno comparto qué construí, las herramientas que utilicé y lo que aprendí durante el proceso.
+                Estos son algunos de los proyectos en los que he trabajado para poner en práctica mis conocimientos de programación. Incluyo trabajos universitarios en equipo y una iniciativa personal que estoy comenzando a desarrollar.
             </p>
             
-            <h1>Zona Bikers</h1>
+            <div class="row g-4">
+                
+                <div class="col-12">
+                    <article class="proyecto card">
+                        <div class="card-body">
 
-            <h3>Proyecto Universitario en equipo · Versión inicial completada</h3>
+                            <h3>Zona Bikers</h3>
+                
+                            <p class="proyecto-estado">Proyecto universitario en equipo · Versión inicial completada</p>
+                            
+                            <p class="descripcion">
+                                Sitio web de una tienda de accesorios para motocicletas, con páginas de catálogo, detalle de productos, carrito y administración.
+                            </p>
 
-            <p>
-                Sitio web de una tienda de accesorios para motocicletas, desarrollado como proyecto universitario. Incluye páginas de catálogo, detalle de productos, carrito y administración. La siguiente etapa del proyecto consiste en trasladar la interfaz a React.
-            </p>
+                            <p class="mi_aporte">
+                                <strong>Mi aporte:</strong> Desarrollé la lógica en JavaScript para validar formularios, registrar usuarios y gestionar el inicio de sesión. También implementé las funcionalidades del carrito de compras, incluida la incorporación de productos.
+                            </p>
 
-            <p>
-                Tecnologías: HTML5 - CSS - JavaScript 
-            </p>
+                            <ul>
+                                <li class="tecnologias">
+                                    Tecnologías: HTML5 - CSS3 - JavaScript
+                                </li>
+                                <li>
+                                    Próxima etapa: Migración de la interfaz a React.
+                                </li>
+                            </ul>
+                            <a  href="https://github.com/victor-salas89/zona-bikers"
+                                class="btn btn-outline-primary">
+                                Ver repositorio de Zona Bikers
+                            </a>
+
+                            <div id="carrusel-zona-bikers"
+                                class="carousel slide proyecto-carrusel w-100 my-4"
+                                role="region"
+                                aria-label="Capturas de Zona Bikers">
+                                
+                                
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img    src="img/Zona_Bikers/inicio.png" 
+                                        class="d-block w-100"
+                                        alt="Página de inicio de Zona Bikers">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img    src="img/Zona_Bikers/login.png" 
+                                        class="d-block w-100"
+                                        alt="Formulario de inicio de sesión de Zona Bikers">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img    src="img/Zona_Bikers/carrito.png" 
+                                        class="d-block w-100"
+                                        alt="Carrito de compras de Zona Bikers con productos">
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="carousel-indicators">
+                                    <button type="button"
+                                            data-bs-target="#carrusel-zona-bikers"
+                                            data-bs-slide-to="0"
+                                            class="active"
+                                            aria-current="true"
+                                            aria-label="Ver inicio"></button>
+                                    
+                                    <button type="button"
+                                            data-bs-target="#carrusel-zona-bikers"
+                                            data-bs-slide-to="1"
+                                            aria-label="Ver inicio de sesión"></button>
+                                    
+                                    <button type="button"
+                                            data-bs-target="#carrusel-zona-bikers"
+                                            data-bs-slide-to="2"
+                                            aria-label="Ver carrito"></button>
+                                </div>
+                                
+                                <button class="carousel-control-prev" 
+                                        type="button"
+                                        data-bs-target="#carrusel-zona-bikers"
+                                        data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Imagen anterior</span>
+                                </button>
+
+                                <button class="carousel-control-next" 
+                                        type="button"
+                                        data-bs-target="#carrusel-zona-bikers"
+                                        data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Imagen siguiente</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="proyecto card h-100">
+                        <div class="row g-0">
+
+                            <div class="col-12 col-lg-5">
+                                <div class="card-body h-100">
+                                    <h3>TacticalTrack</h3>
+
+                                    
+                                    <p class="proyecto-estado">Proyecto universitario en equipo · En desarrollo</p>
+
+                                    <p class="descripcion">
+                                        Aplicación móvil orientada al registro y verificación de visitas en terreno a equipos de refrigeración. Incluye registro de evidencia fotográfica y ubicación GPS para facilitar el seguimiento de las visitas.
+                                    </p>
+
+                                    <p class="mi_aporte">
+                                        <strong>Mi aporte:</strong>
+                                        Implementé la captura de fotografías, la obtención de ubicación GPS y el registro de evidencia de las visitas. También desarrollé la validación de visitas por un supervisor e integré el flujo de navegación de la aplicación.
+                                    </p>
+
+                                    <ul>
+                                        <li class="tecnologias">
+                                            Tecnologías: Kotlin, Jetpack Compose y Android Studio
+                                        </li>
+                                    </ul>
+                                    <a  href="https://github.com/JonaSlack/EA-2-TacticalTrack"
+                                        class="btn btn-outline-primary">
+                                        Ver repositorio de TacticalTrack
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-7 proyecto-movil-visual">
+                                <img
+                                    src="img/TacticalTrack/nueva-visita.jpg"
+                                    alt="Pantalla de registro de visita de TacticalTrack"
+                                    class="proyecto-movil-imagen"
+                                    loading="lazy">
+                                <img
+                                    src="img/TacticalTrack/evidencia-visita.jpg"
+                                    alt="Pantalla de registro de evidencia de TacticalTrack"
+                                    class="proyecto-movil-imagen"
+                                    loading="lazy">
+                                <img
+                                    src="img/TacticalTrack/historial.jpg"
+                                    alt="Pantalla de historial de registros de TacticalTrack"
+                                    class="proyecto-movil-imagen"
+                                    loading="lazy">
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <article class="proyecto card h-100">
+                        <div class="card-body">
+
+                            <h3>TechStore API</h3>
+                
+                            <p class="proyecto-estado">Proyecto universitario</p>
+
+                            <p class="descripcion">
+                                API para gestionar productos de una tienda mediante operaciones de registro, consulta, actualización y eliminación. Desarrollada con Java y Spring Boot, con una integración de PostgreSQL y configuración para contenedores Docker.
+                            </p>
+
+                            <ul>
+                                <li class="tecnologias">
+                                    Tecnologías: Java, Spring Boot, PostgreSQL y Docker
+                                </li>
+                            </ul>
+                            <a  href="https://github.com/KevinValdess/techstore-api-aws"
+                                class="btn btn-outline-primary">
+                                Ver repositorio de TechStore API
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <article class="proyecto card h-100">
+                        <div class="card-body">
+
+                            <h3>Aplicación para entrega de insumos</h3>
+                
+                            <p class="proyecto-estado">Proyecto personal  · En planificación</p>
+
+                            <p class="descripcion">
+                                Proyecto que surge de una necesidad de la bodega de mi trabajo. Su objetivo es registrar la entrega de insumos a técnicos y generar un comprobante PDF con sus datos, firma y detalle de la entrega. Contempla consultar el inventario de la empresa mediante Odoo.
+                            </p>
+
+                            <p class="mi_aporte">
+                                <strong>Mi avance:</strong> Definí el objetivo y las funciones principales. Realicé pruebas básicas de formularios en Python y estoy preparando el inicio del desarrollo móvil en Kotlin.
+                            </p>
+
+                            <ul>
+                                <li class="tecnologias">
+                                    Tecnologías previstas: Kotlin
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
 
         </section>
-  </main>
+        
+        <section id="conocimientos" class="py-5">
+            
+            <h2>Conocimientos aplicados</h2>
+            
+            <ul class="row g-4 list-unstyled">
+
+                <li class="col-12 col-md-6">
+                    <strong>Oracle SQL y PL/SQL:</strong>
+                    creación de consultas y desarrollo de programas y paquetes para organizar lógica en la base de datos.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>HTML:</strong>
+                    estructuración de páginas web con etiquetas semánticas, encabezados, navegación y enlaces.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>CSS:</strong>
+                    aplicación de estilos para definir la presentación visual de páginas web.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>JavaScript:</strong>
+                    implementación de validación de formularios, registro de usuarios, inicio de sesión y lógica del carrito de compras en Zona Bikers.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>Kotlin y Jetpack Compose:</strong>
+                    creación de pantallas e interfaces para aplicaciones Android en proyectos académicos.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>Java y Spring Boot:</strong>
+                    desarrollo de APIs en proyectos académicos con arquitectura monolítica y de microservicios.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>React:</strong>
+                    creación de interfaces web organizadas en componentes, mediante ejercicios académicos de carrito de compras.
+                </li>
+
+                <li class="col-12 col-md-6">
+                    <strong>Python y pandas:</strong>
+                    lectura de archivos Excel, manipulación de DataFrames y elaboración de tablas de frecuencias para ejercicios de análisis de datos.
+                </li>
+            
+            </ul>
+        </section>
+
+        <section id="sobre-mi" class="py-5">
+
+            <h2>Sobre mí</h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-lg-7">
+                    <p>
+                        Mi interés por la tecnología nace de la curiosidad por entender cómo funcionan las cosas. Esa inquietud me acercó a la electrónica y la automatización industrial, y también despertó mi interés por el desarrollo de videojuegos, las páginas web y la ciberseguridad.
+                    </p>
+                    
+                    <p>
+                        Disfruto programar y aprender durante el proceso, especialmente cuando descubro formas más claras y eficientes de construir una solución. De mi experiencia en mantenimiento de ascensores llevo al desarrollo el pensamiento crítico, la perseverancia y la atención al detalle. Me gusta concentrarme en lo que estoy construyendo y seguir buscando alternativas cuando algo no funciona.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <h3>Formación</h3>
+
+                    <ul class="formacion">
+                        <li>
+                            <p>Ingeniería en Informática — Duoc UC</p>
+                            En curso, con salida intermedia prevista para obtener el título de Técnico en Análisis de Programación.
+                        </li>
+
+                        <li>
+                            Técnico de Nivel Medio en Electrónica y Automatización Industrial.
+                        </li>
+
+                    </ul>
+
+                    <h3>
+                        Experiencia técnica previa
+                    </h3>
+
+                    <p>
+                        Actualmente trabajo como técnico en mantenimiento de ascensores. Esta experiencia me ha enseñado a investigar fallas, evaluar alternativas y buscar soluciones con los recursos disponibles, habilidades que también aplico al desarrollar software.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contacto" class="py-5">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Para oportunidades de empleo y/o solicitud de proyectos no dudes en contactarme.
+            </p>
+
+            <ul class="list-unstyled d-flex flex-wrap gap-3 mt-4">
+                <li>
+                    <a  href="mailto:kevin.s.valdes@gmail.com"
+                        class="btn btn-primary">
+                        Escríbeme por correo
+                    </a>
+                </li>
+                <li>
+                    <a  href="https://wa.me/56995588856"
+                        class="btn btn-outline-primary">
+                        Hablemos por WhatsApp
+                    </a>
+                </li>
+                <li>
+                    <a  href="https://github.com/KevinValdess"
+                        class="btn btn-outline-primary">
+                        Accede a mi GitHub
+                    </a>
+                </li>
+                <li>
+                    <a  href="https://www.linkedin.com/in/kevin-valdés-silva-364582293"
+                        class="btn btn-outline-primary">
+                        Perfil de LinkedIn
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+            
+    </main>
 
   <!-- Pie de página -->
-  <footer>
-    <p>© 2026 Kevin</p>
-    
-    <ul>
-        <li><a href=""><i class="bi bi-envelope"></i> Correo</a></li>
-        <li><a href=""><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
-    </ul>
+    <footer class="border-top">
+        <div class="container py-4">
+            <p class="mb-0">© 2026 Kevin Valdés</p>
+        </div>
+    </footer>
 
-  </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
 
 </body>
 </html>
