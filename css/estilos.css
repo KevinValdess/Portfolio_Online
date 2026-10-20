@@ -101,6 +101,13 @@ header {
     box-shadow: 0 4px 16px rgb(15 23 42 / 10%);
 }
 
+.tecnologia-logos {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+
 .btn-primary {
     --bs-btn-bg: var(--color-acento);
     --bs-btn-border-color: var(--color-acento);
